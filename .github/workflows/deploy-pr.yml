@@ -1,3 +1,4 @@
+# https://docs.github.com/ja/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions
 name: deploy-pr
 
 on:
@@ -8,7 +9,6 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  # https://docs.github.com/ja/packages/managing-github-packages-using-github-actions-workflows/publishing-and-installing-a-package-with-github-actions
   build-and-push-image:
     runs-on: ubuntu-latest
     permissions:
